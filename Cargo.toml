@@ -3,6 +3,9 @@ name = "spin_on"
 version = "0.1.0"
 authors = ["paulkernfeld <me@paulkernfeld.com>"]
 edition = "2018"
+description = "A simple, inefficient Future executor"
+license = "Apache-2.0 OR MIT"
+categories = ["asynchronous", "no-std"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
