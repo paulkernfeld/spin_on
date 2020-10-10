@@ -76,9 +76,9 @@ pub fn spin_on<F: Future>(future: F) -> F::Output {
     let mut cx = Context::from_waker(waker);
     loop {
         if let Poll::Ready(output) = future.as_mut().poll(&mut cx) {
-            spin_loop_hint(); // TODO am I using this correctly?
             return output;
         }
+        spin_loop_hint();
     }
 }
 
