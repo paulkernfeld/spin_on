@@ -72,7 +72,7 @@ fn noop_waker() -> RawWaker {
 /// Continuously poll a future until it returns `Poll::Ready`. This is not normally how an
 /// executor should work, because it runs the CPU at 100%.
 pub fn spin_on<F: Future>(mut future: F) -> F::Output {
-    let future = unsafe { Pin::new_unchecked(&mut future) };
+    let mut future = unsafe { Pin::new_unchecked(&mut future) };
     let waker = &unsafe { Waker::from_raw(noop_waker()) };
     let mut cx = Context::from_waker(waker);
     loop {
