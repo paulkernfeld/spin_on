@@ -12,7 +12,7 @@
 //! - It is really simple
 //! - It should work on basically any platform
 //! - It has no dependency on `std` or on an allocator
-//! - It only has one dependency
+//! - It has no dependencies
 //!
 //! ## The Design
 //!
