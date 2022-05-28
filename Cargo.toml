@@ -7,6 +7,7 @@ description = "A simple, inefficient Future executor"
 license = "Apache-2.0 OR MIT"
 categories = ["asynchronous", "no-std"]
 exclude = ["/Makefile.toml"]
+repository = "https://github.com/paulkernfeld/spin_on"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
